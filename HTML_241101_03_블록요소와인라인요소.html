@@ -3,7 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>블록요소와 인라인요소</title>
+    <style>
+      .movie {
+        background-color: orange;
+      }
+      .tv {
+        background-color: royalblue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- HTML의 모든 요소는 display 속성값을 가짐 -->
+    <!-- display 속성은 크게 block과 inline으로 나누어짐 -->
+    <!-- block 요소는 해당 라인의 모든 너비를 차지함 : p, div, h, ul, ol, form 등 -->
+
+    <!-- p태그만 사용 -->
+    <p>영화 소개</p>
+    <p>영화를 소개하는 페이지 입니다.</p>
+    <p>TV 프로그램 소개</p>
+    <p>TV 프로그램을 소개하는 페이지 입니다.</p>
+
+    <!-- div태그 함께 사용하기 -->
+    <div class="movie">
+      <p>영화 소개</p>
+      <p>영화를 소개하는 페이지입니다.</p>
+    </div>
+    <div class="tv">
+      <p>TV 프로그램 소개</p>
+      <p>TV 프로그램을 소개하는 페이지입니다.</p>
+    </div>
+
+    <!-- div태그의 범위 확인 -->
+    <div style="background-color: lightgray; color: green; text-align: center">
+      <h1>div요소를 이용한 스타일 적용</h1>
+      <p>
+        이렇게 div요소로 여러 요소들을 묶은 다음에 style 속성과 클래스 등을
+        이용하여 한 번에 스타일을 적용할 수 있습니다.
+      </p>
+    </div>
+  </body>
 </html>
