@@ -4,8 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>링크와이미지</title>
+    <style>
+      a {
+        /* 내부적으로는 inline, 외부에는 block / 인라인과 블록 속성을 동시에 가짐 */
+        display: inline-block;
+        text-decoration: none;
+        background-color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      a > img {
+        width: 300px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
     <!-- a태그는 HTML에서 내부나 외부 링크를 생성-->
+    <a href="https://google.co.kr" target="_blank" title="구글로 가보자고오~~"
+      >Go Google!</a
+    >
+    <br /><br /><br />
+    <a
+      href="https://naver.com"
+      targett="_self"
+      title="네이버 그런데 _self라서 요페이지에서감요"
+      >oh Naver oh</a
+    >
+    <hr />
+    <br /><br />
+
+    <!-- img 태그 -->
+    <img
+      src="https://file.notion.so/f/f/bdf8d538-0573-4e53-8871-08828a72d8e6/2f8ccf9e-5b6b-474f-8640-7da6f43c79d0/bear.png?table=block&id=5cef8a67-d158-4a49-bc05-c72a063fd01a&spaceId=bdf8d538-0573-4e53-8871-08828a72d8e6&expirationTimestamp=1730517928603&signature=dxlUTQOhvxtk3GCTIWHA61qVBjHc-gYYqLPj4_-5DXY&downloadName=bear.png"
+      alt="이미지가 있나 아니면 없나"
+    />
+    <img src="HTML_241101_04_이미지샘플/bear.png" alt="이건되겠지" />
+    <br />
+    <hr />
+    <a href="https://google.com"
+      ><img
+        src="HTML_241101_04_이미지샘플/Google.png"
+        alt="이런것도된다는것을나는진즉에알고있었지롱"
+    /></a>
   </body>
 </html>
