@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이 페이지</title>
+    <style>
+      /* CSS에서의 주석*/
+    </style>
+  </head>
+  <body>
+    <p>나의 첫번째 html을 작성해 보겠습니다.</p>
+    <h1>이것은 제목입니다.</h1>
+    <h2>두번째 큰 제목입니다.</h2>
+
+    <!-- 인라인 스타일링 -->
+    <h3
+      style="
+        background-color: orange;
+        font-size: 200%;
+        text-align: center;
+        color: white;
+      "
+    >
+      인라인 스타일링 적용
+    </h3>
+
+    <!-- 체크박스 -->
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked />
+      <label for="scales">Scales</label>
+    </div>
+
+    <!-- 라디오 버튼 -->
+    <div>
+      <input type="radio" id="test1" name="scales" checked />
+      <label for="test1">Test1</label>
+      <input type="radio" id="test2" name="scales" />
+      <label for="test2">Test2</label>
+      <input type="radio" id="test3" name="scales" />
+      <label for="test3">Test3</label>
+    </div>
+
+    <!-- 테이블 -->
+    <table border="1">
+      <th>테이블</th>
+      <th>만들기</th>
+      <tr>
+        <!-- 첫번째 줄 시작 -->
+        <td>첫번째 칸</td>
+        <td>두번째 칸</td>
+      </tr>
+      <!-- 첫번째 줄 끝 -->
+      <tr>
+        <!-- 두번째 줄 시작 -->
+        <td>첫번째 칸</td>
+        <td>두번째 칸</td>
+      </tr>
+      <!-- 두번째 줄 끝 -->
+    </table>
+
+    <!-- iframe 요소 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/SHYWqy_X-tU?si=bCCJ8qeWB509Uf5w"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+  </body>
+</html>
