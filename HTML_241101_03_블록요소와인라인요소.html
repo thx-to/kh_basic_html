@@ -7,16 +7,25 @@
     <style>
       .movie {
         background-color: orange;
+        margin-bottom: 10px;
       }
       .tv {
         background-color: royalblue;
+      }
+      .span {
+        color: red;
+        font-weight: bold;
+        background-color: antiquewhite;
       }
     </style>
   </head>
   <body>
     <!-- HTML의 모든 요소는 display 속성값을 가짐 -->
     <!-- display 속성은 크게 block과 inline으로 나누어짐 -->
-    <!-- block 요소는 해당 라인의 모든 너비를 차지함 : p, div, h, ul, ol, form 등 -->
+    <!-- 아래 inline, block 요소별 구분은 '기본값', style 태그에서 display: block; 이런식으로 얼마든지 변경 가능 -->
+
+    <!-- block 요소는 새로운 라인에서 시작, 해당 라인의 모든 너비를 차지함 : p, div, h, ul, ol, form 등 -->
+    <!-- inline 요소는 새로운 라인에서 시작하지 않으며, 해당 요소의 내용만큼 차지 : span, a, img, strong, em, input, button 등 -->
 
     <!-- p태그만 사용 -->
     <p>영화 소개</p>
@@ -26,15 +35,15 @@
 
     <!-- div태그 함께 사용하기 -->
     <div class="movie">
-      <p>영화 소개</p>
+      <h3>영화 소개</h3>
       <p>영화를 소개하는 페이지입니다.</p>
     </div>
     <div class="tv">
-      <p>TV 프로그램 소개</p>
+      <h3>TV 프로그램 소개</h3>
       <p>TV 프로그램을 소개하는 페이지입니다.</p>
     </div>
 
-    <!-- div태그의 범위 확인 -->
+    <!-- div태그의 범위 확인, 인라인 스타일 적용 -->
     <div style="background-color: lightgray; color: green; text-align: center">
       <h1>div요소를 이용한 스타일 적용</h1>
       <p>
@@ -42,5 +51,41 @@
         이용하여 한 번에 스타일을 적용할 수 있습니다.
       </p>
     </div>
+
+    <!-- 리스트 만들기 : ul, ol -->
+    <h3>판매 중인 과일 목록 ul</h3>
+    <ul>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ul>
+
+    <h3>판매 중인 과일 목록 ol</h3>
+    <ol>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ol>
+
+    <h3>판매 중인 과일 목록 ol 스타일링</h3>
+    <ol style="list-style: none; margin: 0; padding: 0">
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ol>
+
+    <!-- dl태그 찍어보기 : 안써도 됨, 다른것들로 대체 가능 -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        HTML은 Hyper Text Markup Language의 약자로 웹 문서의 구조를 설계하기
+        위한 목적으로 개발된 언어입니다.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        CSS는 Cascading Style Sheets의 약자로 웹 문서를 꾸미기 위한 목적으로
+        개발된 언어입니다.
+      </dd>
+    </dl>
   </body>
 </html>
