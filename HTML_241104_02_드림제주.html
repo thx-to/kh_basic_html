@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Jeju</title>
+    <link rel="stylesheet" href="/css/scructure.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <!-- div#id라고 치면 <div id="logo"></div>라고 자동 입력, #이 id 선택자이기 때문 -->
+        <!-- REACT는 컴포넌트 단위로 쪼개서 화면을 만들기 때문에 id선택자를 사용할 수 없음(id는 재사용 불가능) -->
+        <div id="logo">
+          <a href="#">
+            <h1>Dream Jeju</h1>
+          </a>
+        </div>
+        <nav>
+          <!-- 여기서도 똑같이 ul#topMenu라고 치면 자동 생성 -->
+          <!-- 입력 부분에서 Ctrl+Alt 누르고 위/아래 화살표로 세로 선택 영역 조절하면 여러 줄 동시 입력 가능 -->
+          <ul id="topMenu">
+            <li><a href="#">단체 여행</a></li>
+            <li><a href="#">맞춤 여행</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">문의하기</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- main.contents라고 치면 <main class="contents"></main>이라고 자동 입력, .이 클래스 선택자이기 때문 -->
+      <main class="contents">
+        <section id="healing">
+          <h2>몸과 마음이 치유되는 섬</h2>
+          <div class="detail">
+            <img src="HTML_241104_02_이미지샘플/healing.jpg" />
+            <b><p>쉼(Healing)의 공간으로 안내합니다.</p></b>
+            <p>
+              탁 트인 바다, 시원한 바람에 몸을 맡기고 뚜벅뚜벅 오름을 오르고
+              올레길을 걷다 보면 온전히 나에게 집중할 수 있습니다.
+            </p>
+          </div>
+          <div class="schedule">
+            <h3>상세 일정</h3>
+            <ul>
+              <li>여행 기간 : 2박 3일</li>
+              <li>
+                여행 일정 : (여행 일정은 상담을 통해 결정 및 조정 가능합니다.)
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="activity">
+          <h2>다양한 액티비티가 기다리는 섬</h2>
+          <div class="detail">
+            <img src="HTML_241104_02_이미지샘플/activity.jpg" />
+            <b><p>모험과 스릴이 넘치는 레저의 천국으로 안내합니다.</p></b>
+            <p>둘러보기만 하는 여행을 하셨나요?</p>
+            <p>
+              하늘을 날며 시원한 바다를 내려다보는 패러글라이등과 투명한 물빛
+              속을 여행하는 스킨스쿠버... 아름다운 제주 해안도로를 씽씽
+              전동바이크나 전동킥보드로 달려보세요. 시원한 바다를 가까이에서
+              느낄 수 있는 요트 체험과 배낚시도 빼놓을 수 없겠죠?
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">여행약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
