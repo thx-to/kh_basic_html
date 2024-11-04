@@ -1,0 +1,15 @@
+
+    h1 {
+      font-size: 48px;
+      color: white;
+      background-color: royalblue;
+      padding: 10px 0px;
+      margin-bottom: 10px;
+    }
+    
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: orangered;
+      margin-bottom: 10px;
+    }
