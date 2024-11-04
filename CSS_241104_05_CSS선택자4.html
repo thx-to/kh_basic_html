@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS선택자4</title>
+    <style>
+      /* 구조적 가상 클래스 선택자 */
+      /* 리스트 중 첫번째 요소만 선택 */
+      li:first-child {
+        color: red;
+      }
+      /* 리스트 중 마지막 요소만 선택 */
+      li:last-child {
+        color: blue;
+      }
+      /* p태그 중 첫번째 요소만 선택 */
+      p:nth-child(1) {
+        color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>text1</li>
+      <li>test2</li>
+      <li>test3</li>
+      <li>test4</li>
+    </ul>
+
+    <p>뉴진스(NewJeans)</p>
+    <div>
+      <p>아이브(IVE)</p>
+      <p>르세라핌(LE SSERAFIM)</p>
+    </div>
+    <div>
+      <p>에스파(AESPA)</p>
+      <p>엔믹스(NMIXX)</p>
+    </div>
+  </body>
+</html>
