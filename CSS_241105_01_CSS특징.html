@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS특징</title>
+    <style>
+      .parent {
+        font-size: 30px;
+      }
+      .child {
+        font-size: 80%;
+      }
+      .child-to-child {
+        font-size: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>부모의 폰트 크기</p>
+      <div class="child">
+        <p>자식의 폰트 크기</p>
+        <div class="child-to-child">
+          <p>자식의 자식 이자식</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

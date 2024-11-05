@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS박스모델</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(54, 141, 255);
+        gap: 20px;
+      }
+      .box1 {
+        display: flex;
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed #000;
+        border-radius: 40px;
+        box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.3);
+      }
+      .box2 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        border-right: 2px solid black;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .box2:hover {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="box1">박스 모델 1</p>
+      <p class="box1">박스 모델 2</p>
+    </div>
+    <br /><br />
+    <p class="box2">새로운 박스1</p>
+    <p class="box2">새로운 박스2</p>
+  </body>
+</html>
