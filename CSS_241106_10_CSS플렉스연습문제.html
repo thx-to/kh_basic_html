@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS플렉스연습문제</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+      width: 1200px;
+      height: 600px;
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+    }
+    .header {
+      width: 1200px;
+      height: auto;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      background-color: black;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      font-size: 4em;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      color: white;
+      background-color: rgb(0, 0, 0);
+    }
+    .headline {
+      width: 1000px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 100px;
+      background-color: rgb(214, 214, 214);
+    }
+    .headmenu {
+      width: 1000px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      justify-content: space-around;
+      background-color: gray;
+    }
+    .menu {
+      color: white;
+      background-color: gray;
+      flex: 1;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .hamburger {
+      width: 100px;
+      height: 100px;
+      font-size: 4em;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: calc(50% + 500px);
+      background-color: rgb(0, 0, 0);
+      z-index: 1;
+    }
+    .main {
+    }
+    .footer {
+      width: 1200px;
+      height: 100px;
+      position: fixed;
+      bottom: 0;
+      background-color: gray;
+    }
+    </style>
+  </head>
+<body>
+  <div class="container">
+<div class="header">
+    <div class="logo-headline-container">
+        <div class="logo"><i class="fa-solid fa-rocket"></i></div>
+        <div class="headline">타이틀이 들어가야 할 듯 . . . 함다.  .</div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="headmenu">
+        <div class="menu">MENU1</div>
+        <div class="menu">MENU2</div>
+        <div class="menu">MENU3</div>
+        <div class="menu">MENU4</div>
+    </div>
+</div>
+      <div class="main"></div>
+      <div class="footer"></div>
+</div>
+
+</body>
+</html>
