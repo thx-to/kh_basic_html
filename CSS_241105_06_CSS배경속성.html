@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #img {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-bottom: 10px;
+      }
+      .image {
+        width: 320px;
+        height: 240px;
+        background-image: url("CSS_241105_06_요소샘플/coffee.jpg");
+        background-repeat: no-repeat;
+        border: 1px solic black;
+        background-color: rgb(0, 47, 255);
+        background-size: auto;
+        background-position: right top;
+      }
+      #container {
+        height: 1000px;
+      }
+      .parent {
+        width: 320px;
+        height: 240px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+      .child {
+        height: 2000px;
+        background-attachment: scroll;
+        background-image: url("CSS_241105_06_요소샘플/coffee.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="img"></div>
+    <div class="image"></div>
+    <br />
+    <div id="container">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS위치속성</title>
+    <style>
+      body {
+        margin: 0;
+        height: 4000px;
+        position: relative;
+      }
+      .container {
+        width: 300px;
+        height: 4000px;
+        background-color: orange;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .red-box {
+        background-color: red;
+      }
+      .green-box {
+        background-color: green;
+        position: relative;
+        left: 100px;
+      }
+      .blue-box {
+        background-color: blue;
+      }
+      .purple-box {
+        background-color: purple;
+        position: absolute;
+        left: 70px;
+        top: 300px;
+      }
+      .purple-box:hover {
+        z-index: 1;
+      }
+      .pink-box {
+        background-color: pink;
+        position: fixed;
+        left: 200px;
+        top: 300px;
+      }
+      .gray-box {
+        background-color: gray;
+        position: sticky;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red-box"></div>
+      <div class="box green-box"></div>
+      <div class="box blue-box"></div>
+      <div class="box purple-box"></div>
+      <div class="box pink-box"></div>
+      <div class="box gray-box"></div>
+    </div>
+  </body>
+</html>
