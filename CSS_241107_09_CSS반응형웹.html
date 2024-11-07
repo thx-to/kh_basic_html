@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS반응형웹</title>
+  <style>
+    body {
+      /* 기본 배경 이미지 */
+      background: url(CSS_241107_09_요소샘플/bg0.jpg) no-repeat fixed;
+      background-size: cover;
+    }
+    /* @media를 적용하는 대상이 screen */
+    /* 가로 1024px 이하일 때 배경 이미지 */
+    @media screen and (max-width: 1024px) {
+      body {
+        background: url(CSS_241107_09_요소샘플/bg1.jpg) no-repeat fixed;
+        background-size: cover;
+      }      
+    }
+    /* 가로 768px 이하일 때 배경 이미지 */    
+    @media screen and (max-width: 768px) {
+      body {
+        background: url(CSS_241107_09_요소샘플/bg2.jpg) no-repeat fixed;
+        background-size: cover;
+      }
+    }
+    /* 가로 500px 이하일 때 배경 이미지 */
+    @media screen and (max-width: 500px) {
+      body {
+        background: url(CSS_241107_09_요소샘플/bg3.jpg) no-repeat fixed;
+        background-size: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS그리드배치</title>
+  <style>
+    * {
+      margin : 10;
+    }
+    .grid-container {
+      width: 700px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 100px);
+      gap: 10px;
+      grid-template-areas:
+      "header  header  header  header header"
+      "sidebar  content content content content"
+      "sidebar content content content content"
+      "sidebar content content content content"
+      "footer footer footer footer footer";
+    }
+    #header {
+      grid-area: header;
+      background-color: #f9955a;
+    }
+    #sidebar {
+      grid-area: sidebar;
+      background-color: #04b6ae
+    }
+    #content {
+      grid-area: content;
+      background-color: #f6c473;
+    }
+    #footer {
+      grid-area: footer;
+      background-color: #be9cc9;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="content"></div>
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
