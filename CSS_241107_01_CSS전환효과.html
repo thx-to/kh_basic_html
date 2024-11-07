@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS전환효과</title>
+    <style>
+      .red-box {
+        width: 100px;
+        height: 100px;
+        background-color: orangered;
+      }
+      .red-box:hover {
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+        transition: all 0.5s ease-in 0.2s;
+      }
+      .container {
+        width: 200px;
+        margin-top: 50px;
+        padding: 10px;
+        color: white;
+        font-size: 1.2em;
+        border: 1px solid black;
+      }
+      .container:hover .bar {
+        width: 200px;
+      }
+      .bar {
+        width: 100px;
+        height: 30px;
+        padding-left: 10px;
+        background-color: red;
+        transition-property: width;
+        transition-duration: 2s;
+        margin-bottom: 10px;
+      }
+      .bar:nth-child(1) {
+        transition-timing-function: linear;
+      }
+      .bar:nth-child(2) {
+        transition-timing-function: ease;
+      }
+      .bar:nth-child(3) {
+        transition-timing-function: ease-in;
+      }
+      .bar:nth-child(4) {
+        transition-timing-function: ease-out;
+      }
+      .bar:nth-child(5) {
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red-box"></div>
+    <div class="container">
+      <div class="bar">linear</div>
+      <div class="bar">ease</div>
+      <div class="bar">ease-in</div>
+      <div class="bar">ease-in</div>
+      <div class="bar">ease-in-out</div>
+    </div>
+  </body>
+</html>
