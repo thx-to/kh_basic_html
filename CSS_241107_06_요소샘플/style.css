@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  background-image: url("/CSS_241107_06_요소샘플/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 스크롤시에도 이미지는 고정 */
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 주축정렬: 가로 중간 */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  width: 80px;
+  height: 84px;
+  margin: 4px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #555;
+  overflow: hidden;
+  transform: skewX(-14deg);
+  transition: transform .1s, background-color .6s;
+}
+
+.hero:hover {
+  background-color: #ff9c00;
+  transform: skewX(-14deg) scale(1.3);
+  z-index: 1;
+}
+
+.hero .image {
+  width: 140%;
+  height: 100%;
+  background-position: center; /* 센터 기준으로 이미지 자름 */
+  background-repeat: no-repeat;
+  background-size: 90px;
+  transform: skewX(14deg) translateX(-16px);
+}
+
+.hero:nth-child(1) .image {background-image: url("/CSS_241107_06_요소샘플/hero1.png");}
+.hero:nth-child(2) .image {background-image: url("/CSS_241107_06_요소샘플/hero2.png");}
+.hero:nth-child(3) .image {background-image: url("/CSS_241107_06_요소샘플/hero3.png");}
+.hero:nth-child(4) .image {background-image: url("/CSS_241107_06_요소샘플/hero4.png");}
+.hero:nth-child(5) .image {background-image: url("/CSS_241107_06_요소샘플/hero5.png");}
+.hero:nth-child(6) .image {background-image: url("/CSS_241107_06_요소샘플/hero6.png");}
+.hero:nth-child(7) .image {background-image: url("/CSS_241107_06_요소샘플/hero7.png");}
+.hero:nth-child(8) .image {background-image: url("/CSS_241107_06_요소샘플/hero8.png");}
+.hero:nth-child(9) .image {background-image: url("/CSS_241107_06_요소샘플/hero9.png");}
+.hero:nth-child(10) .image {background-image: url("/CSS_241107_06_요소샘플/hero10.png");}
+.hero:nth-child(11) .image {background-image: url("/CSS_241107_06_요소샘플/hero11.png");}
+.hero:nth-child(12) .image {background-image: url("/CSS_241107_06_요소샘플/hero12.png");}
+.hero:nth-child(13) .image {background-image: url("/CSS_241107_06_요소샘플/hero13.png");}
+.hero:nth-child(14) .image {background-image: url("/CSS_241107_06_요소샘플/hero14.png");}
+.hero:nth-child(15) .image {background-image: url("/CSS_241107_06_요소샘플/hero15.png");}
+.hero:nth-child(16) .image {background-image: url("/CSS_241107_06_요소샘플/hero16.png");}
+.hero:nth-child(17) .image {background-image: url("/CSS_241107_06_요소샘플/hero17.png");}
+.hero:nth-child(18) .image {background-image: url("/CSS_241107_06_요소샘플/hero18.png");}
+.hero:nth-child(19) .image {background-image: url("/CSS_241107_06_요소샘플/hero19.png");}
+.hero:nth-child(20) .image {background-image: url("/CSS_241107_06_요소샘플/hero20.png");}
+.hero:nth-child(21) .image {background-image: url("/CSS_241107_06_요소샘플/hero21.png");}
+.hero:nth-child(22) .image {background-image: url("/CSS_241107_06_요소샘플/hero22.png");}
+.hero:nth-child(23) .image {background-image: url("/CSS_241107_06_요소샘플/hero23.png");}
+.hero:nth-child(24) .image {background-image: url("/CSS_241107_06_요소샘플/hero24.png");}
+.hero:nth-child(25) .image {background-image: url("/CSS_241107_06_요소샘플/hero25.png");}
+.hero:nth-child(26) .image {background-image: url("/CSS_241107_06_요소샘플/hero26.png");}
+.hero:nth-child(27) .image {background-image: url("/CSS_241107_06_요소샘플/hero27.png");}
+.hero:nth-child(28) .image {background-image: url("/CSS_241107_06_요소샘플/hero28.png");}
+.hero:nth-child(29) .image {background-image: url("/CSS_241107_06_요소샘플/hero29.png");}
+.hero:nth-child(30) .image {background-image: url("/CSS_241107_06_요소샘플/hero30.png");}
+.hero:nth-child(31) .image {background-image: url("/CSS_241107_06_요소샘플/hero31.png");}
+.hero:nth-child(32) .image {background-image: url("/CSS_241107_06_요소샘플/hero32.png");}
+
+.logo {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 100%;
+}
